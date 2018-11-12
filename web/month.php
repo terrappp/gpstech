@@ -59,8 +59,7 @@ function get_booking_summary($start, $end, $day_start, $day_end)
       // Don't bother showing the end if it's the same as the start period
       if ($end_str !== $start_str)
       {
-        $result .= $separator . $end_str;
-      }
+        $result .= $separator . $end_str;      }
       break;
     case "> = ":         // Starts after midnight, ends at midnight
       $result = $start_str . $separator . $midnight;
@@ -108,8 +107,7 @@ function get_table_head()
     }
     else
     {
-      $html .= "<th>" . day_name(($i + $weekstarts)%7) . "</th>";
-    }
+      $html .= "<th>" . day_name(($i + $weekstarts)%7) . "</th>";    }
   }
   $html .= "\n</tr>\n";
   $html .= "</thead>\n";
@@ -165,8 +163,7 @@ function month_table_innerhtml($day, $month, $year, $room, $area)
     {
       if ($debug_flag)
       {
-        $html .= "<br>DEBUG: id ".$entry['id'].", starts ".$entry['start_time'].", ends ".$entry['end_time']."\n";
-      }
+        $html .= "<br>DEBUG: id ".$entry['id'].", starts ".$entry['start_time'].", ends ".$entry['end_time']."\n";      }
 
       if ($debug_flag)
       {

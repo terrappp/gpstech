@@ -22,12 +22,10 @@ function generate_report_input($params)
   {
     if (!empty($select_options[$params['field']]))
     {
-      $params['options'] = $select_options[$params['field']];
-    }
+      $params['options'] = $select_options[$params['field']];    }
     elseif (!empty($datalist_options[$params['field']]))
     {
-      $params['options'] = $datalist_options[$params['field']];
-    }
+      $params['options'] = $datalist_options[$params['field']];    }
   }
   
   if (isset($params['options']))
