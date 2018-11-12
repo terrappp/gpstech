@@ -114,13 +114,11 @@ class Mail
     function send($recipients, $headers, $body)
     {
         if (!is_array($headers)) {
-            return PEAR::raiseError('$headers must be an array');
-        }
+            return PEAR::raiseError('$headers must be an array');        }
 
         $result = $this->_sanitizeHeaders($headers);
         if (is_a($result, 'PEAR_Error')) {
-            return $result;
-        }
+            return $result;        }
 
         // if we're passed an array of recipients, implode it.
         if (is_array($recipients)) {
