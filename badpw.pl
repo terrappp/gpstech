@@ -21,9 +21,7 @@ $users{admin} = "secret";
 
 if ($users{$un} eq $pw)
 {
-  exit 0;
-}
+  exit 0;}
 else
 {
-  exit 1;
-}
+  exit 1;}
