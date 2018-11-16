@@ -42,7 +42,7 @@ function get_compression_wrappers()
   }
   return $result;
 }
-
+//HI THERE
 
 // Gets the id of the area/room with the LOCATION property value of $location,
 // creating an area and room if allowed.
